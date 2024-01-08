@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Lumina Shop</title>
+  </head>
+  <body>
+    <header">
+      <nav class="navbar navbar-expand-lg px-4 py-2" style="background-color: #F6F6F6;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Lumina</a>
+        <button class="navbar-toggler btn-light" type="button" style="height: 40px;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0" style="width: 600px;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/pages/productos/productos-principal.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/pages/productos/productos-principal.html">Todos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/productos/velas.html">Velas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/productos/esencias.html">Esencias</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true" href="/pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+            <div class="navbar-nav icon-list" style="justify-content:center;">
+              <a href="/pages/productos/productos-principal.html" class="nav-link" aria-current="page"><i class="fas fa-cart-shopping"></i></a>
+              <a href="/index.html" class="nav-link" aria-current="page"><i class="fas fa-user"></i></a>
+              <a href="/pages/productos.html" class="nav-link"><i class="fas fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+      <section class="container my-5">
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis" style="background-color: #F6F6F6;;">
+          <div class="col-lg-4 px-0">
+            <h1 class="subtitulo-blog display-4 fst-italic">Lumina tu día</h1>
+            <p class="lead my-3">Blog centrado en cuidados de belleza y personales, enfocandonos en la importancia de estar siempre al tanto de todas las novedades que se ven en el día a día.</p>
+            <p class="lead mb-0"><a href="/pages/blog.html" class="text-body-emphasis fw-normal">Saber más...</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-12 col-md-3  filtros-container">
+            <p class="subtitulo-filtro text-start">Filtros</p>
+            <div class="accordion" id="tipoPublicacionAccordion">
+              <div class="accordion-item">
+                <p class="accordion-header">
+                  <p class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tipoPublicacionCollapse" aria-expanded="true" aria-controls="tipoPublicacionCollapse">
+                    Tipo de Publicación
+                  </button>
+                </p>
+                <div id="tipoPublicacionCollapse" class="accordion-collapse collapse show" data-bs-parent="#tipoPublicacionAccordion">
+                  <div class="accordion-body px-4 py-4">
+                      <div class="form-check text-start">
+                        <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                        <label class="form-check-label" for="opcion1">Vida Diaria</label>
+                      </div>
+                      <div class="form-check text-start">
+                        <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                        <label class="form-check-label" for="opcion1">Cuidado Personal</label>
+                      </div>
+                      <div class="form-check text-start">
+                        <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                        <label class="form-check-label" for="opcion1">Cuidado del Producto</label>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <p class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Tiempo de Lectura
+                  </button>
+                </p>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body px-4 py-4">
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                      <label class="form-check-label" for="opcion1">Menor a 5 minutos</label>
+                    </div>
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                      <label class="form-check-label" for="opcion1">Mayor a 5 minutos</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <section class="blog-container col-12 col-md-9">
+        <div class="container py-3 bg-body-tertiary my-5">
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+              <div class="col">
+                  <div class="card h-100">
+                    <img src="/assets/blog-assets/homeoffice-momentos.jpg" class="card-img-top" alt="homeoffice-momentos" width="180" height="180">
+                    <div class="card-body">
+                        <h5 class="card-title">Home Office: Momentos de Serenidad</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">#VidaDiaria #5mindeLectura</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/assets/blog-assets/aromatiza-tusmomentos.jpg" class="card-img-top" alt="homeoffice-momentos" width="180" height="180">
+                <div class="card-body">
+                    <h5 class="card-title">Aromatiza tus espacios, ten un hogar de impacto.</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">#VidaDiaria #10mindeLectura</small></p>
+                </div>
+            </div>
+        </div>
+            <div class="col">
+                  <div class="card h-100">
+                    <img src="/assets/blog-assets/manifestaciones-quedebesrealizar.jpg" class="card-img-top" alt="homeoffice-momentos" width="180" height="180">
+                    <div class="card-body">
+                        <h5 class="card-title">Manifestaciones que debes de realizar durante la semana.</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-body-secondary">#CuidadoPersonal #4mindeLectura</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="/assets/blog-assets/losaromas-quetedanpaz.jpg" class="card-img-top" alt="homeoffice-momentos" width="180" height="180">
+                <div class="card-body">
+                    <h5 class="card-title">Los aromas que te darán paz y serenidad, en esos momentos de meditación.</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">#CuidadoPersonal #7mindeLectura</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/assets/blog-assets/evita-5errores.jpg" class="card-img-top" alt="homeoffice-momentos" width="180" height="180">
+            <div class="card-body">
+                <h5 class="card-title">Evita estos 5 errores para mantener más tiempo el olor de tus esencias.</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">#CuidadoProducto #5mindeLectura</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/assets/blog-assets/laesencia-cocovainilla.jpg" class="card-img-top" alt="homeoffice-momentos" width="180" height="180">
+            <div class="card-body">
+                <h5 class="card-title">La esencia de coco y vainilla, un favorito para tus días de spa.</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-body-secondary">#CuidadoPersonal #10mindeLectura</small></p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+      <section class="footer-container" style="background:#F6F6F6;">
+        <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-12 col-md-2 mb-3">
+                <h5>Lumina</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Lima, Perú</a></li>
+                </ul>
+              </div>
+        
+              <div class="col-12 col-md-2 mb-3">
+                <h5>Contacto</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">999-999-999</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">contacto@lumina.com</a></li>
+                </ul>
+              </div>
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5>Suscríbete a nuestro foro</h5>
+                  <p>Noticias semanales sobre temas de cuidado personal.</p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn btn-outline-dark" type="button">Suscríbete</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+              <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+              </ul>
+            </div>
+          </footer>
+        </div>
+      </section>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+  </html>
+
+

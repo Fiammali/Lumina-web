@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Lumina Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg px-4 py-3" style="background-color: #F6F6F6;">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Lumina</a>
+        <button class="navbar-toggler btn-light" type="button" style="height: 40px;" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0" style="width: 600px;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/pages/productos/productos-principal.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Productos</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/pages/productos/productos-principal.html">Todos</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/productos/velas.html">Velas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/productos/esencias.html">Esencias</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-disabled="true" href="/pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+            <div class="navbar-nav icon-list" style="justify-content:center;">
+              <a href="/pages/productos/productos-principal.html" class="nav-link" aria-current="page"><i class="fas fa-cart-shopping"></i></a>
+              <a href="/index.html" class="nav-link" aria-current="page"><i class="fas fa-user"></i></a>
+              <a href="/pages/productos.html" class="nav-link"><i class="fas fa-magnifying-glass"></i></a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+      <section class="py-1 text-center container">
+        <section class="py-1 text-center container">
+          <div class="row">
+            <div class="col-lg-6 col-md-2 mx-auto">
+              <h1 class="fw-light mx-4 my-4 text-center">Nuestras Esencias</h1>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="container">
+        <div class="row">
+          <div class="col-12 col-md-3  filtros-container">
+            <p class="subtitulo-filtro text-start">Filtros</p>
+            <div class="accordion" id="tipoProductosAccordion">
+              <div class="accordion-item">
+                <p class="accordion-header">
+                  <p class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tipoProductosCollapse" aria-expanded="true" aria-controls="tipoProductosCollapse">
+                    Tipo de Productos
+                  </button>
+                </p>
+                <div id="tipoProductosCollapse" class="accordion-collapse collapse show" data-bs-parent="#tipoProductosAccordion">
+                  <div class="accordion-body px-4 py-4">
+                      <div class="form-check text-start">
+                        <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                        <label class="form-check-label" for="opcion1">Esencias</label>
+                      </div>
+                      <div class="form-check text-start">
+                        <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                        <label class="form-check-label" for="opcion1">Velas</label>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="aromasAccordion">
+              <div class="accordion-item">
+                <p class="accordion-header">
+                  <p class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aromasCollapse" aria-expanded="true" aria-controls="aromasCollapse">
+                    Aromas
+                  </button>
+                </p>
+                <div id="aromasCollapse" class="accordion-collapse collapse show" data-bs-parent="#aromasAccordion">
+                  <div class="accordion-body px-4 py-4">
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                      <label class="form-check-label" for="opcion1">Serenidad Lavanda</label>
+                  </div>
+                  <div class="form-check text-start">
+                    <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                    <label class="form-check-label" for="opcion1">Limón Verbena</label>
+                </div>
+                <div class="form-check text-start">
+                  <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                  <label class="form-check-label" for="opcion1">Jazmín Floral</label>
+              </div>
+              <div class="form-check text-start">
+                <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                <label class="form-check-label" for="opcion1">Vainilla</label>
+            </div>
+            <div class="form-check text-start">
+              <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+              <label class="form-check-label" for="opcion1">Rosas Silvestres</label>
+          </div>
+          <div class="form-check text-start">
+            <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+            <label class="form-check-label" for="opcion1">Eucalipto y Menta</label>
+        </div>
+        <div class="form-check text-start">
+          <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+          <label class="form-check-label" for="opcion1">Coco y Canela</label>
+      </div>
+      <div class="form-check text-start">
+        <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+        <label class="form-check-label" for="opcion1">Bosques de Pino</label>
+    </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <p class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Precio
+                  </button>
+                </p>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body px-4 py-4">
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                      <label class="form-check-label" for="opcion1">Menor a s/.15 soles</label>
+                    </div>
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="radio" id="opcion1" name="grupoRadio" value="opcion1">
+                      <label class="form-check-label" for="opcion1">Mayor a s/.15 soles</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- termina la columna de filtros -->
+          <div class="col-12 col-md-9 productos-container">
+            <div class="album py-3 bg-body-tertiary my-5">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/assets/productos/Esencia Serenidad Lavanda.png" class="card-img-top" alt="Esencia Serenidad de Lavanda">
+                        <div class="card-body">
+                          <p class="card-text text-start">Esencia Serenidad Lavanda</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="precio-container">
+                                  <button type="button" class="btn btn-outline-dark">s/.40,00</button>
+                                  <button type="button" class="btn btn-outline-dark">Comprar</button>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/assets/productos/Esencia Limón Verbena.png" class="card-img-top" alt="Esencia Limón Verbena">
+                        <div class="card-body">
+                          <p class="card-text text-start">Esencia Limón Verbena</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="precio-container">
+                              <button type="button" class="btn btn-outline-dark">s/.35,00</button>
+                              <button type="button" class="btn btn-outline-dark">Comprar</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                <div class="card shadow-sm">
+                  <img src="/assets/productos/Esencia Jazmín Floral.png" class="card-img-top" alt="Esencia Jazmín Floral">
+                  <div class="card-body">
+                    <p class="card-text text-start">Esencia Jazmín Floral</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="precio-container">
+                        <button type="button" class="btn btn-outline-dark">s/.20,00</button>
+                        <button type="button" class="btn btn-outline-dark">Comprar</button>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+                  </div>
+              <div class="col">
+              <div class="card shadow-sm">
+                <img src="/assets/productos/Esencia Vainilla.png" class="card-img-top" alt="Esencia Vainilla">
+                <div class="card-body">
+                  <p class="card-text text-start">Esencia Vainilla</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="precio-container">
+                      <button type="button" class="btn btn-outline-dark">s/.50,00</button>
+                      <button type="button" class="btn btn-outline-dark">Comprar</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+            <div class="col">
+            <div class="card shadow-sm">
+              <img src="/assets/productos/Esencia Rosas Silvestres.png" class="card-img-top" alt="Esencia Rosas Silvestres">
+              <div class="card-body">
+                  <p class="card-text text-start">Esencia Rosas Silvestres</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="precio-container">
+                      <button type="button" class="btn btn-outline-dark">s/.20,00</button>
+                      <button type="button" class="btn btn-outline-dark">Comprar</button>
+                    </div>
+                    </div>
+                </div>
+          </div>
+            </div>
+            <div class="col">
+          <div class="card shadow-sm">
+            <img src="/assets/productos/Esencia Eucalipto y Menta.png" class="card-img-top" alt="Esencia Eucalipto y Menta">
+            <div class="card-body">
+              <p class="card-text text-start">Esencia Eucalipto y Menta</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="precio-container">
+                  <button type="button" class="btn btn-outline-dark">s/.30,00</button>
+                  <button type="button" class="btn btn-outline-dark">Comprar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+          </section>
+        </main>
+        <footer>
+          <section class="footer-container" style="background:#F6F6F6;">
+            <div class="container">
+              <footer class="py-5">
+                <div class="row">
+                  <div class="col-12 col-md-2 mb-3">
+                    <h5>Lumina</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Lima, Perú</a></li>
+                    </ul>
+                  </div>
+            
+                  <div class="col-12 col-md-2 mb-3">
+                    <h5>Contacto</h5>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">999-999-999</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">contacto@lumina.com</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                      <h5>Suscríbete a nuestro foro</h5>
+                      <p>Noticias semanales sobre temas de cuidado personal.</p>
+                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Correo Electrónico</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-outline-dark" type="button">Suscríbete</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                  <p>&copy; 2024 Company, Inc. All rights reserved.</p>
+                  <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+                  </ul>
+                </div>
+              </footer>
+            </div>
+          </section>
+      </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        </body>
+      </html>
+      
