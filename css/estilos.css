@@ -46,7 +46,7 @@ ul, ol, li{
 
 
 .header-hero{
-    background-image: url("/assets/landingpage-assets/prueba-landing.jpg");
+    background-image: url("../assets/landingpage-assets/prueba-landing.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
