@@ -1,0 +1,33 @@
+@import "./base/reset";
+@import "./base/typography";
+@import "./utilities/mixins"; 
+
+@import "./layouts/header";
+@import "./layouts/mainIndex";
+@import "./layouts/footer";
+
+// Estilos específicos para dispositivos móviles
+@include mobile {
+  .filtros-column, .productos-column {
+    max-width: 100%;
+  }
+
+  .subtitulo-nosotros {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: start;
+  }
+
+  .lead {
+    font-size: 14px;
+    font-weight: 200;
+    text-align: start;
+  }
+}
+
+// Estilos específicos para tabletas
+@include media-query(tablet) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}

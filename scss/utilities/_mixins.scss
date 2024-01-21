@@ -1,0 +1,28 @@
+// _mixins.scss
+
+@mixin visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  @mixin mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin media-query($device) {
+    @if $device == 'tablet' {
+      @media (min-width: 768px) {
+        @content;
+      }
+    }
+  }
+  

@@ -1,0 +1,62 @@
+.navbar{
+    .container-fluid{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-nav{
+        gap: 10px;
+        font-size: 16px;
+        padding: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        font-family: 'Petit Formal Script', cursive;
+        text-decoration: none;    
+    }
+    
+        .collapse {
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        gap: 10px;
+        }
+}
+
+.header-hero{
+    background-image: url("../../assets/landingpage-assets/prueba-landing.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.slogan-container{
+    margin: 200px;
+    width: 400px;
+
+    .text-slogan{
+        width: 500px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        color: #1D1B20;
+        line-height: 100%;
+    }
+}
+
+.boton-container{
+    color: #F6F6F6;
+    font-size: 16px;
+}
+
